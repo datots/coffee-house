@@ -408,7 +408,7 @@
     gap: 40px;
     align-self: stretch;
   }
-  .big_pic img {
+  .big_pic .lady {
     width: 100%;
   }
 
