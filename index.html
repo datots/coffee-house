@@ -11,27 +11,47 @@
     <title>Home Page</title>
   </head>
   <body>
+    <script src="./script.js"></script>
     <header>
       <section class="nav-container">
         <div class="header-menu">
           <img src="./image/logo.png" alt="" class="logo" />
           <nav class="nav-bar">
             <ul>
-              <li><a href="">Favorite coffee</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Mobile app</a></li>
-              <li><a href="">Contact us</a></li>
+              <li>
+                <a href="#favorite-coffee">Favorite coffee</a>
+              </li>
+              <li><a href="#about-section">About</a></li>
+              <li>
+                <a href="#mobile-app">Mobile app</a>
+              </li>
+              <li>
+                <a href="#contacts">Contact us</a>
+              </li>
             </ul>
           </nav>
           <a class="coffee-menu" href="./Menu/index.html">
             <span>Menu</span>
-            <img src="./image/coffee-cup.png  " alt="coffe cup icon" />
+            <img src="./image/coffee-cup.png  " alt="coffee cup icon" />
           </a>
-          <img
-            src="./image/button-icon-burger.svg"
-            alt=""
-            class="burger-menu"
-          />
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+
+          <nav class="tablet-nav">
+            <a href="">Favorite coffee</a>
+
+            <a href="">About</a>
+
+            <a href="">Mobile app</a>
+
+            <a href="">Contact us</a>
+
+            <a class="coffee-menu" href="./Menu/index.html">
+              <span>Menu</span>
+              <img src="./image/coffee-cup.png  " alt="coffee cup icon" />
+            </a>
+          </nav>
         </div>
       </section>
       <section class="hero">
@@ -57,63 +77,187 @@
       </section>
     </header>
     <main>
-      <section class="favorite-coffee">
-        <div class="coffee-container">
-          <h2>Choose your <span> favorite </span> coffee</h2>
-          <div class="slider">
-            <a class="arrow-btn" href=""
-              ><svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.5 12H6M6 12L12 6M6 12L12 18"
-                  stroke="#403F3D"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-            <div>
-              <img src="./image//coffee-slider-1.png" alt="left-arrow" />
-              <div class="description">
-                <h3>S’mores Frappuccino</h3>
-                <p>
-                  This new drink takes an espresso and mixes it with brown
-                  <br class="br" />
-                  sugar and cinnamon before being topped with oat milk.
-                </p>
-                <h3 class="dol">$5.50</h3>
-              </div>
-              <img
-                src="./image/Flex-commands.png"
-                alt="flex-commands"
-                class="flex"
-              />
+      <section class="favorite-coffee" id="favorite-coffee">
+        <h2>Choose your <span> favorite </span> coffee</h2>
+
+        <!-- Slider container -->
+        <div class="slider">
+          <!-- slide 1 -->
+          <div class="slide">
+            <img
+              src="./image/coffee-slider-1.png"
+              style="
+                width: 480px;
+                height: 480px;
+                background-repeat: no-repeat;
+                justify-content: center;
+                background-size: cover;
+              "
+              alt="Coffee cup"
+            />
+            <div class="description">
+              <h3>S’mores Frappuccino</h3>
+              <p>
+                This new drink takes an espresso and mixes it with brown sugar
+                and cinnamon before being topped with oat milk.
+              </p>
+              <h3 class="dol">$5.50</h3>
             </div>
-            <a class="arrow-btn" href=""
-              ><svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18"
-                  stroke="#403F3D"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
           </div>
+
+          <!-- slide 2 -->
+          <div class="slide">
+            <img
+              src="./image/coffee-slider-2.png"
+              style="
+                width: 480px;
+                height: 480px;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+              alt="Coffee cup"
+            />
+            <div class="description">
+              <h3>Caramel macchiato</h3>
+              <p>
+                Fragrant and unique classic espresso with rich caramel-peanut
+                syrup, with cream under whipped thick foam.
+              </p>
+              <h3 class="dol">$5.00</h3>
+            </div>
+          </div>
+
+          <!-- slide 3 -->
+          <div class="slide">
+            <img
+              src="./image/coffee-slider-3.png"
+              style="
+                width: 480px;
+                height: 480px;
+                justify-content: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+              alt="Coffee cup"
+            />
+            <div class="description">
+              <h3>Ice coffee</h3>
+              <p>
+                A popular summer drink that tones and invigorates. Prepared from
+                coffee, milk, and ice.
+              </p>
+              <h3 class="dol">$4.50</h3>
+            </div>
+          </div>
+
+          <!-- Control buttons -->
+          <button class="btn btn-next">></button>
+          <button class="btn btn-prev"><</button>
         </div>
+
+        <!-- <div class="carousel">
+          <div class="carousel-card">
+            <img
+              src="./image/coffee-slider-1.png"
+              style="
+                width: 480px;
+                height: 480px;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+              alt="Coffee cup"
+            />
+            <div class="description">
+              <h3>S’mores Frappuccino</h3>
+              <p>
+                This new drink takes an espresso and mixes it with brown sugar
+                and cinnamon before being topped with oat milk.
+              </p>
+              <h3 class="dol">$5.50</h3>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <img
+              src="./image/coffee-slider-2.png"
+              style="
+                width: 480px;
+                height: 480px;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+              alt="Caramel cup"
+            />
+            <div class="description">
+              <h3>Caramel macchiato</h3>
+              <p>
+                Fragrant and unique classic espresso with rich caramel-peanut
+                syrup, with cream under whipped thick foam.
+              </p>
+              <h3 class="dol">$5.00</h3>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <img
+              src="./image/coffee-slider-3.png"
+              style="
+                width: 480px;
+                height: 480px;
+                background-repeat: no-repeat;
+                background-size: cover;
+              "
+              alt="Ice coffee"
+            />
+            <div class="description">
+              <h3>Ice coffee</h3>
+              <p>
+                A popular summer drink that tones and invigorates. Prepared from
+                coffee, milk, and ice.
+              </p>
+              <h3 class="dol">$4.50</h3>
+            </div>
+          </div>
+          <a class="arrow-btn next-btn" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18"
+                stroke="#403F3D"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a class="arrow-btn prev-btn" href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.5 12H6M6 12L12 6M6 12L12 18"
+                stroke="#403F3D"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </div> -->
+
+        <!-- <div class="carousel__nav">
+          <div class="carousel__indicator" onclick="navigateToSlide(0)"></div>
+          <div class="carousel__indicator" onclick="navigateToSlide(1)"></div>
+          <div class="carousel__indicator" onclick="navigateToSlide(2)"></div>
+        </div>  -->
       </section>
-      <section class="about-section">
+      <section class="about-section" id="about-section">
         <div class="about-container">
           <h2>
             Resource is <span> the perfect and cozy place </span> where you can
@@ -140,7 +284,7 @@
           </div>
         </div>
       </section>
-      <section class="mobile-app-section">
+      <section class="mobile-app-section" id="mobile-app">
         <div class="mobile-container">
           <div class="mobile-text">
             <h2><span>Download</span> our apps to start ordering</h2>
@@ -215,7 +359,7 @@
 
     <footer class="contacts" id="contacts">
       <div class="footer-container">
-        <div class="footer-offer  ">
+        <div class="footer-offer">
           <h2>
             Sip, Savor, Smile. <br />
             <span> It’s coffee time!</span>

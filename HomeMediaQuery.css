@@ -6,10 +6,12 @@
     display: none;
   }
 
-  .burger-menu {
-    display: inline-block;
-  }
+  /* BURGER MENU */
+    .hamburger {
+      display: inline-block;
+    }
 
+  /* BURGER MENU */
   .images-container {
     flex-wrap: wrap;
     justify-content: center;

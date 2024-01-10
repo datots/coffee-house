@@ -37,9 +37,16 @@ header {
 } */
 
 /* BURGER MENU */
-.burger-menu {
+/* .burger-menu {
   display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
+
+.burger-icon {
+  font-size: 24px;
+} */
+
 .nav-container {
   display: flex;
   /* padding: 0px 40px; */
@@ -116,9 +123,127 @@ header {
   text-decoration: none;
 }
 
+/* BURGER MENU */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.tablet-nav {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 80%;
+  display: block;
+  height: 90vh;
+  z-index: 98;
+  flex-direction: column;
+  background-color: #b0907a;
+  padding-top: 70px;
+  transition: 0.4s;
+}
+
+.tablet-nav.is-active {
+  left: 50px;
+}
+
+.tablet-nav a {
+  display: block;
+  width: 70%;
+  max-width: 70px;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 12px 16px;
+  background-color: #b0907a;
+  color: white;
+  text-decoration: none;
+}
+
+.tablet-nav a:hover {
+  background-color: #24104f;
+}
+.hamburger {
+  display: none;
+}
+
+/* BURGER MENU */
+
+/* CAROUSEL */
+.slider {
+  position: relative;
+  width: 480px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  /* background-color: rgba(255, 255, 255, 0.9); */
+  padding: 20px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
+
+/* CAROUSEL */
+
 /* //NAvigation up/// */
 
-/* //HEO IMAGE CONTAINER/// */
+/* //HERO IMAGE CONTAINER/// */
 
 .hero {
   display: flex;
@@ -229,7 +354,7 @@ header {
   margin-left: 10.5px;
 }
 
-/* //HEO IMAGE CONTAINER/// */
+/* //HERO IMAGE CONTAINER/// */
 
 /* MAIN */
 
@@ -240,8 +365,9 @@ main {
   flex-direction: column;
   align-items: center;
   align-self: stretch;
-  
 }
+
+/* FAVORITE COFFE FINISH */
 
 .favorite-coffee {
   display: flex;
@@ -251,16 +377,9 @@ main {
   align-self: stretch;
 }
 
-.coffee-container {
-  display: flex;
-  /* max-width: 1360px; */
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  align-self: stretch;
-}
+/* COFFEE TEXT */
 
-.coffee-container h2 {
+.favorite-coffee h2 {
   color: var(--Text-Dark, #403f3d);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -273,7 +392,7 @@ main {
   line-height: 125%;
 }
 
-.coffee-container span {
+.favorite-coffee span {
   color: var(--Text-Accent, #b0907a);
   font-feature-settings: "clig" off, "liga" off;
   font-family: Inter;
@@ -283,25 +402,9 @@ main {
   line-height: 125%;
 }
 
-.favorite-coffee .slider {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
+/* COFFEE TEXT */
 
-.slider div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dol {
-  padding-bottom: 50px;
-}
-
-.arrow-btn {
+.btn {
   display: block;
   display: flex;
   width: 60px;
@@ -314,15 +417,15 @@ main {
   transition: 0.8s;
 }
 
-.arrow-btn:hover svg > path {
+.btn:hover svg > path {
   stroke: #e1d4c9;
 }
 
-.arrow-btn:hover {
+.btn:hover {
   background: #665f55;
 }
 
-.slider h3 {
+.favorite-coffee h3 {
   color: var(--Text-Dark, #403f3d);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -334,7 +437,7 @@ main {
   line-height: 125%; /* 30px */
 }
 
-.slider p {
+.favorite-coffee p {
   color: var(--Text-Dark, #403f3d);
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -346,7 +449,7 @@ main {
   line-height: 150%;
 }
 
-.slider .description {
+.favorite-coffee .description {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -846,4 +949,3 @@ ul li a img {
 }
 
 /* FOOTER */
-
