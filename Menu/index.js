@@ -1,24 +1,13 @@
-var modal = document.getElementById("productModal");
-var closeBtn = document.getElementsByClassName("close")[0];
+function showTab(tabId) {
+    // Hide all containers
+    var containers = document.querySelectorAll('.container');
+    containers.forEach(function(container) {
+      container.classList.remove('active');
+    });
 
-// Add click event listeners to each preview card
-var cards = document.querySelectorAll(".preview-card");
-cards.forEach(function (card) {
-  card.addEventListener("click", function () {
-    var cardContent = card.innerHTML;
-    document.getElementById("modalContent").innerHTML = cardContent;
-    modal.style.display = "block";
-  });
-});
-
-// When the user clicks on <span> (x), close the modal
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
+    // Show the selected container
+    var selectedContainer = document.getElementById(tabId + '-container');
+    if (selectedContainer) {
+      selectedContainer.classList.add('active');
+    }
   }
-};

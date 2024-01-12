@@ -140,7 +140,7 @@ header {
 .hamburger::before {
   content: "";
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: 5px;
   background-color: white;
   margin: 6px 0px;
@@ -165,12 +165,13 @@ header {
   left: 100%;
   width: 80%;
   display: block;
-  height: 90vh;
+  height: 80vh;
   z-index: 98;
   flex-direction: column;
   background-color: #b0907a;
   padding-top: 70px;
   transition: 0.4s;
+  
 }
 
 .tablet-nav.is-active {
@@ -237,7 +238,6 @@ header {
 .btn-next {
   right: 10px;
 }
-
 
 /* CAROUSEL */
 
