@@ -9,7 +9,6 @@
     <title>Menu Page</title>
   </head>
   <body>
-    <script src="./index.js"></script>
     <header>
       <section class="header-menu">
         <a href="../index.html">
@@ -37,7 +36,11 @@
               <span class="highlight heading-2 accent">amazing surprise</span>
             </h2>
             <div class="tabs">
-              <div class="tab-item active" id="coffee" onclick="showTab('coffee')">
+              <div
+                class="tab-item active"
+                id="coffee"
+                onclick="showTab('coffee')"
+              >
                 <div class="icon-bg">
                   <img src="./assets/icon-coffee.png" alt="coffee icon" />
                 </div>
@@ -58,7 +61,7 @@
             </div>
           </div>
           <div class="container active" id="coffee-container">
-            <div class="preview-card">
+            <div class="preview-card" id="0">
               <div class="img-box">
                 <img src="assets/irish-coffee.png" alt="Irish Coffee" />
               </div>
@@ -73,7 +76,7 @@
                 <p class="dol">$7.00</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" id="1">
               <div class="img-box">
                 <img src="assets/kahlua-coffee.png" alt="Kahlua coffee" />
               </div>
@@ -88,7 +91,7 @@
                 <p class="dol">$7.00</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" id="2">
               <div class="img-box">
                 <img src="assets/honey-raf.png" alt="Honey raf" />
               </div>
@@ -100,7 +103,7 @@
                 <p class="dol">$5.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" id="3">
               <div class="img-box">
                 <img src="assets/ice-cappuccino.png" alt="Ice cappuccino" />
               </div>
@@ -114,66 +117,61 @@
                 <p class="dol">$5.00</p>
               </div>
             </div>
-            <div class="container" id="hide">
-              <div class="preview-card">
-                <div class="img-box">
-                  <img src="assets/espresso.png" alt="Espresso" />
-                </div>
-                <div class="description-container">
-                  <div class="desc-title">
-                    <h3>Espresso</h3>
-                    <p>Classic basic coffee</p>
-                  </div>
-                  <p class="dol">$4.50</p>
-                </div>
+            <div class="preview-card" id="4">
+              <div class="img-box">
+                <img src="assets/espresso.png" alt="Espresso" />
               </div>
-              <div class="preview-card">
-                <div class="img-box">
-                  <img src="assets/latte.png" alt="Latte" />
+              <div class="description-container">
+                <div class="desc-title">
+                  <h3>Espresso</h3>
+                  <p>Classic basic coffee</p>
                 </div>
-                <div class="description-container">
-                  <div class="desc-title">
-                    <h3>Latte</h3>
-                    <p>
-                      Espresso coffee with the addition of steamed milk and
-                      dense milk foam
-                    </p>
-                  </div>
-                  <p class="dol">$5.50</p>
-                </div>
+                <p class="dol">$4.50</p>
               </div>
-              <div class="preview-card">
-                <div class="img-box">
-                  <img src="assets/latte-macchiato.png" alt="latte-macchiato" />
-                </div>
-                <div class="description-container">
-                  <div class="desc-title">
-                    <h3>Latte macchito</h3>
-                    <p>Espresso with frothed milk and chocolate</p>
-                  </div>
-                  <p class="dol">$5.50</p>
-                </div>
+            </div>
+            <div class="preview-card" id="5">
+              <div class="img-box">
+                <img src="assets/latte.png" alt="Latte" />
               </div>
-              <div class="preview-card">
-                <div class="img-box">
-                  <img
-                    src="assets/coffeewithcognac.png"
-                    alt="coffeewithcognac"
-                  />
+              <div class="description-container">
+                <div class="desc-title">
+                  <h3>Latte</h3>
+                  <p>
+                    Espresso coffee with the addition of steamed milk and dense
+                    milk foam
+                  </p>
                 </div>
-                <div class="description-container">
-                  <div class="desc-title">
-                    <h3>Coffee with cognac</h3>
-                    <p>Fragrant black coffee with cognac and whipped cream</p>
-                  </div>
-                  <p class="dol">$6.50</p>
+                <p class="dol">$5.50</p>
+              </div>
+            </div>
+            <div class="preview-card" id="6">
+              <div class="img-box">
+                <img src="assets/latte-macchiato.png" alt="latte-macchiato" />
+              </div>
+              <div class="description-container">
+                <div class="desc-title">
+                  <h3>Latte macchito</h3>
+                  <p>Espresso with frothed milk and chocolate</p>
                 </div>
+                <p class="dol">$5.50</p>
+              </div>
+            </div>
+            <div class="preview-card" id="7">
+              <div class="img-box">
+                <img src="assets/coffeewithcognac.png" alt="coffeewithcognac" />
+              </div>
+              <div class="description-container">
+                <div class="desc-title">
+                  <h3>Coffee with cognac</h3>
+                  <p>Fragrant black coffee with cognac and whipped cream</p>
+                </div>
+                <p class="dol">$6.50</p>
               </div>
             </div>
           </div>
 
           <div class="container" id="tea-container">
-            <div class="preview-card">
+            <div class="preview-card" id="8">
               <div class="img-box">
                 <img src="assets/tea/tea-1-moroccan.png" alt="Moroccan" />
               </div>
@@ -188,7 +186,7 @@
                 <p class="dol">$4.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" id="9">
               <div class="img-box">
                 <img src="assets/tea/tea-2-ginger.png" alt="Ginger" />
               </div>
@@ -203,7 +201,7 @@
                 <p class="dol">$5.00</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" id="10">
               <div class="img-box">
                 <img src="assets/tea/tea-3-cranberry.png" alt="Cranberry" />
               </div>
@@ -218,7 +216,7 @@
                 <p class="dol">$7.00</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" id="11">
               <div class="img-box">
                 <img
                   src="assets/tea/tea-4-sea-buckthorn.png"
@@ -239,7 +237,7 @@
             </div>
           </div>
           <div class="container" id="dessert-container">
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="12">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-1-marble-cheesecake.png"
@@ -258,7 +256,7 @@
                 <p class="dol">$3.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="13">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-2-red-velvet.png"
@@ -276,7 +274,7 @@
                 <p class="dol">$4.00</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="14">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-3-cheesecakes.png"
@@ -295,7 +293,7 @@
                 <p class="dol">$4.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="15">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-4-creme-brulee.png"
@@ -313,7 +311,7 @@
                 <p class="dol">$4.00</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="16">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-5-pancakes.png"
@@ -331,7 +329,7 @@
                 <p class="dol">$4.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="17">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-6-honey-cake.png"
@@ -349,7 +347,7 @@
                 <p class="dol">$4.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="18">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-7-chocolate-cake.png"
@@ -367,7 +365,7 @@
                 <p class="dol">$5.50</p>
               </div>
             </div>
-            <div class="preview-card">
+            <div class="preview-card" onclick="openModal()" id="19">
               <div class="img-box">
                 <img
                   src="assets/dessert/dessert-8-black-forest.png"
@@ -385,6 +383,27 @@
                 </div>
                 <p class="dol">$6.50</p>
               </div>
+            </div>
+          </div>
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span onclick="closeModal()" style="cursor: pointer; float: right"
+                >&times;</span
+              >
+              <h3 id="modalTitle"></h3>
+              <p id="modalDescription"></p>
+              <p id="modalPrice"></p>
+              <div id="size">
+                <p id="S"></p>
+                <p id="M"></p>
+                <p id="L"></p>
+              </div>
+              <div id="additive">
+                <p></p>
+              </div>
+
+              <!-- Add more details from the server as needed -->
             </div>
           </div>
           <div class="refresh">
@@ -511,5 +530,6 @@
         </div>
       </section>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

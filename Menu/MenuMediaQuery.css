@@ -66,9 +66,7 @@
     flex-wrap: wrap;
   }
 
-  .container #hide {
-    display: none;
-  }
+
 
   .contacts {
     display: flex;
