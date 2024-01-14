@@ -542,9 +542,29 @@ main {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 656px;
+  width: 688px;
   border-radius: 40px;
   background: var(--Background-Body, #e1d4c9);
+}
+
+/* MODAL CONTENT */
+
+#modal-description {
+  color: var(--Text-Dark, #403f3d);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Desktop/Heading/heading-3 */
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}
+
+.modal-img {
+  width: 340px;
+  height: 340px;
+  flex-shrink: 0;
 }
 
 /* Style the close button */
