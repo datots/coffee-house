@@ -29,9 +29,92 @@ header {
   align-items: center;
   align-self: stretch;
 }
-.burger-menu {
+
+/* BURGER MENU */
+
+/* THE BUTTON PARAMETERS DO NOT CHANGE */
+.hamburger {
+  position: relative;
+  display: block;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--Border-Dark, #665f55);
+}
+
+.hamburger {
   display: none;
 }
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-actve .bar {
+  opacity: 0;
+}
+
+/* THE BUTTON PARAMETERS UP DO NOT CHANGE */
+
+.tablet-nav {
+  position: fixed;
+  width: 100%;
+  height: 500px;
+  padding: 60px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  flex: 1 0 0;
+  z-index: 98;
+  top: 0;
+  left: 100%;
+  display: block;
+  /* padding-top: 100px; */
+  margin-top: 150px;
+  transition: 0.4s;
+  background-color: #b0907a;
+}
+
+.tablet-nav.is-active {
+  left: 0;
+}
+
+.tablet-nav a {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  gap: 60px;
+  color: white;
+  padding: 10px 16px;
+  width: fit-content;
+  text-decoration: none;
+  background-color: #b0907a;
+}
+
+.tablet-nav a:hover {
+  background-color: gray;
+}
+
+/* BURGER MENU */
+
 .header-menu {
   display: flex;
   justify-content: space-between;

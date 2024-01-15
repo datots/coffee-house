@@ -1,3 +1,21 @@
+window.onload = function () {
+  // window.addEventListener("scroll", function (e) {
+  //   if (window.pageXOffset > 100) {
+  //     this.document.querySelector("header").classList.add("is-scrolling");
+  //   } else {
+  //     this.document.querySelector("header").classList.remove("is-scrolling ");
+  //   }
+  // });
+
+  const menu_btn = document.querySelector(".hamburger");
+  const tablet_menu = document.querySelector(".tablet-nav");
+
+  menu_btn.addEventListener("click", function () {
+    menu_btn.classList.toggle("is-active");
+    tablet_menu.classList.toggle("is-active");
+  });
+};
+
 function showTab(tabId) {
   // Hide all containers
   var containers = document.querySelectorAll(".container");
@@ -803,3 +821,4 @@ cards.forEach((item) => {
     modalImg.src = serverData[id].image;
   });
 });
+

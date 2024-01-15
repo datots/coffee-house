@@ -6,13 +6,32 @@
   .header-menu .logo-right {
     display: none;
   }
+  .modal {
+    width: 90%;
+  }
 
-  .burger-menu {
+  body {
+    max-width: 768px;
+    box-sizing: border-box;
+  }
+
+  header {
+    max-width: 768px;
+  }
+  .header-menu {
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hamburger {
     display: inline-block;
   }
 
-
-
+  .logo-left {
+    width: 100px;
+    height: 60px;
+  }
   .menu {
     display: flex;
     padding: 0px 40px;
@@ -20,16 +39,24 @@
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
-    align-self: stretch;
   }
 
+  #coffee-container #4 {
+    display: none;
+  }
+  #tea-container {
+    display: none;
+  }
+
+  #dessert-container {
+    display: none;
+  }
   .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    align-self: stretch;
   }
 
   .menu-offer {
@@ -37,13 +64,11 @@
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    align-self: stretch;
   }
 
   .menu-offer-title {
     text-align: center;
     font-feature-settings: "clig" off, "liga" off;
-    align-self: stretch;
     font-family: Inter;
     font-size: 60px;
     font-style: normal;
@@ -58,12 +83,16 @@
     gap: 16px;
   }
 
+  #dessert-container {
+    display: none;
+  }
   .container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
     gap: 40px;
+    max-width: 100%;
     align-self: stretch;
     flex-wrap: wrap;
   }
@@ -84,6 +113,7 @@
     justify-content: center;
     align-items: center;
     gap: 100px;
+    max-width: 100%;
     align-self: stretch;
   }
 
@@ -148,16 +178,16 @@
     display: none;
   }
 
-  .burger-menu {
+  .hamburger {
     display: inline-block;
   }
-
   body {
     display: inline-flex;
     padding: 20px 0px 40px 0px;
     flex-direction: column;
     align-items: flex-start;
     gap: 100px;
+    box-sizing: border-box;
   }
 
   main {
