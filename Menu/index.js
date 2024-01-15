@@ -14,10 +14,8 @@ function showTab(tabId) {
 // DATA
 const serverData = [
   {
-    // image: "https://i.ibb.co/5TDLVwB/irish-coffee.png",
-    
     name: "Irish coffee",
-    url: "./assets/irish-coffee.png",
+    image: "https://i.ibb.co/5TDLVwB/irish-coffee.png",
     description:
       "Fragrant black coffee with Jameson Irish whiskey and whipped milk",
     price: "7.00",
@@ -801,7 +799,7 @@ cards.forEach((item) => {
     document.getElementById("additive-3").innerHTML =
       serverData[id].additives[2].name;
 
-    const modalImg = document.getElementById(".modal-img");
-    modalImg.src = serverData[id].url;
+    const modalImg = document.querySelector(".modal-img");
+    modalImg.src = serverData[id].image;
   });
 });

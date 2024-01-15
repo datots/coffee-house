@@ -11,6 +11,8 @@
     display: inline-block;
   }
 
+
+
   .menu {
     display: flex;
     padding: 0px 40px;
@@ -65,8 +67,6 @@
     align-self: stretch;
     flex-wrap: wrap;
   }
-
-
 
   .contacts {
     display: flex;
